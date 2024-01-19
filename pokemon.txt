@@ -1,0 +1,103 @@
+Projet Pokemon : 
+
+- Un pokemon devra avoir un nom, des points de vie, un niveau, une puissance d'attaque, 
+une defense et un type ou plusieurs parmis les 18 types de pokemon existant(class)
+
+Type existant : Acier, Dragon, Electrik, Feu, Insecte, Plante, Psy, Sol, Tenebre
+		Combat, Eau, Fée, Glace, Normal, Poison, Roche, Spectre, Vol
+
+creation d'un Systeme de combat entre deux pokemon avec verification des points de vie à chaque attaque (class)
+
+
+creation de l'outil Pokedex celui possede deux fonction : 
+	- celle de pouvoir enregister un pokemon avec tous les elements le concernant (pokedex.json ou API)
+	- celle de pouvoir visionner ce pokemon avec tous les elements le concernant  (class)
+
+
+Deroulé du programme: 
+	Un menu principal s'affiche avec 4 option : - Lancer une partie 
+					 	    - choisir une sauvegarde
+						    - Pokedex
+						    - Ajouter un pokemon 
+						    - peut etre parametre
+
+faire un rpg avec des images (fan art) pour raconter une petite histoire (music + voix si possible)
+option 1 : 
+Scenario du jeu: 
+
+reveil du personnage principal(Jordan) dans sa chambre 
+->(image + texte "Aujourd'hui c'est le jour J, je vais enfin avoir mon premier pokemon !") 
+transition
+
+Jordan se prepare avant de se diriger vers le salon pour dejeuner et dire au revoir à sa mere
+sa mere lui souhaite bonne chance et lui explique les dangers de cette aventure avant de lui rappeler
+d'aller voir le Professeur Sheb Ifqirne (souleimane)
+->(images + texte "...")
+transition
+
+Jordan passe par des fougeres pour rejoindre le laboratoire du professeur Sheb 
+et tombe sur un ratatac qui demare un combat
+(image de debut de combat + texte de combat + music de combat si possible)
+Jordan n'ayant pas de pokemon n'a pas d'autre choix que de fuir 
+transition
+
+Jordan arrive chez le professeur sheb qui l'acceuil avec plaisir 
+(image + texte)
+transition
+
+Le professeur Sheb l'emenene dans le laboratoire pour lui donner son pokemon parmis les trois et son pokedex 
+(image (reference à matrix) + texte)
+transition 
+
+Jordan doit choisir parmis les trois pokemon du debut 
+(image + texte) 
+transition 
+
+Jordan choisit un pokemon et l'instant d'apres 
+son rival WILSON apparait et choisit un pokemon parmis les pokemon restant 
+et declance directement un combat 
+(image de debut de combat + texte de combat + music de combat si possible)
+transition
+
+apres leur combat Sheb soigne les pokemon de jordan et Wilson 
+(image + texte) 
+transition 
+
+Jordan commence son aventure et participe à plusieurs combat durant son aventure route 14 pour rejoindre la premiere ville
+(image + texte) 
+transition 
+
+son pokemon gagne suffisament de niveau pour evoluer
+(image + texte) 
+transition 
+
+arrivé en ville il se dirige vers un centre pokemon et rencontre un pnj discute avec lui et soigne son pokemon
+(image + texte) 
+transition
+
+
+...
+
+option 2:
+
+pokemon stadium ! 
+
+option 3:
+
+pokemon classique 
+
+Architecture
+
+assets
+  ->font
+     font.ttf
+  ->image
+     image
+include
+     classes
+src
+     main
+
+
+
+

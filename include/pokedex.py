@@ -46,7 +46,7 @@ def display_pokedex():
                     key_repeat_time = current_time + KEY_REPEAT_DELAY
                 elif event.key == K_ESCAPE:
                     return True
-                
+
         keys = pygame.key.get_pressed()
 
         if keys[K_UP] and current_time > key_repeat_time:

@@ -1,4 +1,5 @@
 import pygame, sys
+from pygame.locals import *
 from tkinter import Tk
 from button import Button
 from pokedex import display_pokedex
@@ -46,15 +47,19 @@ def play():
         pygame.display.update()
 
 def pokedex():
-    while True:
-        display_pokedex()
+    while True: 
+
+        if not display_pokedex():
+            display_pokedex()
+        else:
+            main_menu()
+            
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
-            if event.type == pygame.K_ESCAPE:
-                main_menu()
-
+        pygame.display.update()
+    
 
 def options():
     while True:
@@ -79,7 +84,7 @@ def options():
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if OPTIONS_BACK.checkForInput(OPTIONS_MOUSE_POS):
                     main_menu()
-
+                    
         pygame.display.update()
 
 def main_menu():
@@ -117,4 +122,3 @@ def main_menu():
                     pygame.quit()
                     sys.exit()
         pygame.display.update()
-main_menu()

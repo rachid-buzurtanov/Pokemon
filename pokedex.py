@@ -44,7 +44,9 @@ def display_pokedex():
                 elif event.key == K_DOWN:
                     selected_index = min(len(pokemon_data) - 1, selected_index + 1)
                     key_repeat_time = current_time + KEY_REPEAT_DELAY
-
+                elif event.key == K_ESCAPE:
+                    return True
+                
         keys = pygame.key.get_pressed()
 
         if keys[K_UP] and current_time > key_repeat_time:
@@ -113,3 +115,4 @@ def display_pokedex():
 
         pygame.display.flip()
     pygame.quit()
+    return False
